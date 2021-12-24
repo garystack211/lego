@@ -18,13 +18,13 @@ import (
 
 const (
 	// DefaultPropagationTimeout default propagation timeout.
-	DefaultPropagationTimeout = 60 * time.Second
+	DefaultPropagationTimeout = 600 * time.Second
 
 	// DefaultPollingInterval default polling interval.
 	DefaultPollingInterval = 2 * time.Second
 
 	// DefaultTTL default TTL.
-	DefaultTTL = 120
+	DefaultTTL = 300
 )
 
 type ValidateFunc func(core *api.Core, domain string, chlng acme.Challenge) error
